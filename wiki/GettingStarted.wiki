@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Getting started with the PacketMultibroadcaster library is meant to be simple for the implementing developer because most of the complication of writing asynchronous code is abstracted to the library itself. Be sure to checkout the PacketMultibroadcasterDemo in the downloads since it is a complete sample implementation of the library.
+Getting started with the !PacketMultibroadcaster library is meant to be simple for the implementing developer because most of the complication of writing asynchronous code is abstracted to the library itself. Be sure to checkout the !PacketMultibroadcasterDemo in the downloads since it is a complete sample implementation of the library.
 
 = Details =
 
