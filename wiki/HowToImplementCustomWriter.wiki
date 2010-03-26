@@ -7,7 +7,7 @@ This is meant as a short 'how to guide' on how to implement your own custom Writ
 
 = Details =
 
-  # Create custom class that will be your Writer and make it extend Writer
-  # In the constructor pass in the `outputDirector`, `filename`, `extension`, and `type` of Writer that your trying to Writer to.
-  # Override the `encodeAudio (AudioPacket $packet)` and/or `encodeVideo (VideoPacket $packet)` function with your own implementation and type of Writer.
+  # Create a custom class that will be used to encode your media and make it extend Writer.
+  # In the constructor pass in the `outputDirectory`, `filename`, `extension`, and `type` of Writer that your trying to write to.
+  # Override the `encodeAudio (AudioPacket $packet)` and/or `encodeVideo (VideoPacket $packet)` function with your own implementation depending on your Writer type.
   # If you need additional tie-ins to the framework override `setupProcessing()`, `beginProcessing()`, `stopProcessing()`, and/or `finalizeProcessing()` but be sure to call the `super` version of these methods before you write your implementation for validation purposes.
