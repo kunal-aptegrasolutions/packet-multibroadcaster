@@ -1,0 +1,13 @@
+#summary How To Implement your own custom Writer
+
+= Introduction =
+
+This is meant as a short 'how to guide' on how to implement your own custom Writer. Be sure to checkout the *!PacketMultibroadcasterDemo* in the downloads since is has several sample implementations.
+
+
+= Details =
+
+  # Create custom class that will be your Writer and make it extend Writer
+  # In the constructor pass in the `outputDirector`, `filename`, `extension`, and `type` of Writer that your trying to Writer to.
+  # Override the `encodeAudio (AudioPacket $packet)` and/or `encodeVideo (VideoPacket $packet)` function with your own implementation and type of Writer.
+  # If you need additional tie-ins to the framework override `setupProcessing()`, `beginProcessing()`, `stopProcessing()`, and/or `finalizeProcessing()` but be sure to call the `super` version of these methods before you write your implementation for validation purposes.
