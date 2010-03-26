@@ -8,7 +8,7 @@ This is meant as a short 'how to guide' on how to implement your own custom Sour
 
 = Details =
 
-  # Create custom class that will be your Source and make it extend Source
-  # In the constructor pass in an 'id' for debugging purposes and the type of Source (audio or video)
-  # Override the `packAudioPacket (AudioPacket $audioPacket)` or `packVideoPacket (VideoPacket $videoPacket)` function with your own implementation on how to pack the packet.
+  # Create a custom class that will be capture your media and make it extend Source.
+  # In the constructor pass in a 'id' for debugging purposes and the `type` of Source (audio or video)
+  # Override the `packAudioPacket (AudioPacket $audioPacket)` or `packVideoPacket (VideoPacket $videoPacket)` function with your own implementation on how to pack the packet depending on your Source type.
   # If you need additional tie-ins to the framework override `setupProcessing()`, `beginProcessing()`, `stopProcessing()`, and/or `finalizeProcessing()` but be sure to call the `super` version of these methods before you write your implementation for validation purposes.
