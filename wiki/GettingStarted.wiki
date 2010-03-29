@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Getting started with the !PacketMultibroadcaster library is simple for the implementing developer because most of the complication of writing asynchronous code is abstracted to the library. Be sure to checkout the !PacketMultibroadcasterDemo in the downloads section since it is a complete sample implementation of the library.
+Getting started with the !PacketMultibroadcaster library is simple for the implementing developer because most of the complication of writing asynchronous code is abstracted to the library. Be sure to checkout the !PacketMultibroadcasterDemo in the downloads section since it is a complete sample implementation of the library (Note that the library uses Xuggle's Xuggler ([http://www.xuggle.com/xuggler/ Xuggler's Xuggler Project Home Page]) for encoding and you will have to use their instructions to download, install, and then update references to the jars for the demo to execute correctly. 
 
 = Details =
 
