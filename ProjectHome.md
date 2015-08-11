@@ -1,0 +1,5 @@
+**_PacketMultibroadcaster_** is a library that was inspired by Java capturing and encoding libraries (such as [JOGL](http://kenai.com/projects/jogl/pages/Home), [JxCapture](http://www.teamdev.com/jxcapture/), and [Xuggler's Xuggler](http://www.xuggle.com/xuggler/)) and the need as a developer to be able to **loosely implement any combination** of these to create a **multi-capture** / **multi-encode** system without the complication of dealing with thread management.
+
+In layman's terms this means, you can implement any Java capture and/or encoding methodology you want and loosely let them communicate.
+
+To a programmer's benefit, all of their focus can be on implementing custom Sources (such as JxCapture, Robot screen capture, TargetDataLine audio capture, etc.) and custom Writers (such as Xuggler's MediaWriter) since **communication and concurrency is handled by the library**. All you have to do is write your own Source and Writer, extend Source or Writer respectively, and implement the appropriate hooks and your ready to start capturing and encoding.

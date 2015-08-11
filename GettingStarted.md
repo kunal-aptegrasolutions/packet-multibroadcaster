@@ -1,0 +1,13 @@
+# Introduction #
+
+Getting started with the PacketMultibroadcaster library is simple for the implementing developer because most of the complication of writing asynchronous code is abstracted to the library. Be sure to checkout the PacketMultibroadcasterDemo in the downloads section since it is a complete sample implementation of the library (Note that the library uses Xuggle's Xuggler ([Xuggler's Xuggler Project Home Page](http://www.xuggle.com/xuggler/)) for encoding and you will have to use their instructions to download, install, and then update references to the jars for the demo to execute correctly.
+
+# Details #
+
+**Getting Started Steps**
+  1. Decide what libraries or what methodology you would like to use to capture and encode media.
+  1. Follow the other Wikis provided to get instruction on how to implement your own custom Source and Writer.
+  1. Use the library class (`PacketMultibroadcaster`) to perform default operations in the library. Such as:
+    * Setting up a `SourceGroup` with your custom Sources.
+    * Registering Writers to your `SourceGroup(s)`
+    * Calling operations on the library. The typical operation order is: `setupProcessing()`, `beginProcessing()`, and (when your ready to stop and finalize the media) `stopProcessing()`
